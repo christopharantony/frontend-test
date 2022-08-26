@@ -1,0 +1,140 @@
+.card {
+    border: block;
+    box-shadow: 0px 2px 6px 0 rgb(191, 190, 190);
+    border-radius: 8px;
+    width: 500px;
+    margin: 2rem;
+    transition: transform 0.3s;
+}
+
+.largeImage {
+    margin: 0;
+}
+
+.smallImage {
+    margin: 0;
+}
+.largeImage :hover {
+    filter: brightness(0.5);
+}
+
+.button {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.image {
+    width: 100%;
+    max-height: 15rem;
+    border-radius: 8px 8px 0 0;
+    transition: all 0.15s ease-in-out;
+}
+
+.radio {
+    padding: 20px;
+    margin-bottom: -40px;
+    display: flex;
+    margin-left: -8px;
+}
+
+.radio>label>input {
+    display: none;
+}
+
+.radio .circle {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgb(255, 200, 0);
+    margin-left: 10px;
+}
+
+.radio input:checked+.circle {
+    background-color: aqua;
+}
+
+.card-detail {
+    padding: 20px;
+}
+
+.card-detail>h3 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    text-align: left;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.729);
+    margin-bottom: 38px;
+}
+
+.content {
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.32);
+    margin-bottom: 38px;
+}
+
+.foot-detail {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.32);
+}
+
+.learn-more>a {
+    display: none;
+}
+
+.card>img :hover+.button {
+    display: block;
+}
+
+.backdrop-Landing {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+@media (max-width: 799px) {
+    .card {
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 499px) {
+    .card {
+        width: 325px;
+    }
+
+    .card-detail>h3 {
+        font-size: 1rem;
+    }
+
+    .content {
+        font-size: 0.7rem;
+    }
+
+    .foot-detail {
+        font-size: 0.7rem;
+    }
+
+}

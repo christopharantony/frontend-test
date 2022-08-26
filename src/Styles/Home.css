@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.Home {
+    width: 100%;
+}
+
+.Contents{
+    margin: 2rem 7.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+@media (max-width: 499px){
+    .Contents{
+        grid-template-columns: repeat(1, 1fr);   
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 799px){
+    .Contents{
+        grid-template-columns: repeat(1, 1fr);   
+        margin: 30px auto;
+    }
+}
